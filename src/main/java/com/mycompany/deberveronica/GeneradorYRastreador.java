@@ -15,4 +15,14 @@ public class GeneradorYRastreador {
         int limite = (int) Math.pow(10, nivel);
         return new int[]{random.nextInt(limite), random.nextInt(limite)};
     }
+    int correctas = 0;
+int incorrectas = 0;
+
+public void respuestaCorrecta() {
+    correctas++;
+}
+
+public void respuestaIncorrecta() {
+    incorrectas++;
+}
 }
